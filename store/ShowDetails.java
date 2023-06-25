@@ -18,9 +18,12 @@ public class ShowDetails {
         double price = sc.nextDouble();
         p.setPrice(price);
         System.out.println(p);
-        p.addProduct(1);
+        System.out.println("Enter the quantity of products to be added: ");
+
+        p.addProduct(quantity);
         System.out.println(p);
-        p.removeProduct(2);
+        System.out.println("enter the quantity of products to be removed: ");
+        p.removeProduct(quantity);
         System.out.println(p);
 sc.close();
     }
